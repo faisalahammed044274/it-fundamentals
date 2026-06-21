@@ -70,38 +70,59 @@
 
 //Loops in JavaScript
 
-var post1 = {content: 'Had a great day!', likes: 10, shares: 5, comments: 3};
-var post2 = {content: 'Just finished a project.', likes: 20, shares: 10, comments: 8};
-var post3 = {content: 'Looking forward to the weekend!', likes: 15, shares: 7, comments: 4};
-var post4 = {content: 'Enjoying a nice meal.', likes: 8, shares: 3, comments: 2};
+// var post1 = {content: 'Had a great day!', likes: 10, shares: 5, comments: 3};
+// var post2 = {content: 'Just finished a project.', likes: 20, shares: 10, comments: 8};
+// var post3 = {content: 'Looking forward to the weekend!', likes: 15, shares: 7, comments: 4};
+// var post4 = {content: 'Enjoying a nice meal.', likes: 8, shares: 3, comments: 2};
 
-var facebookUser = {
+// var facebookUser = {
 
+//     userName: 'Faisal',
+//     password: '12345',
+//     email: 'faisal@example.com',
+//     profieImage: "reference-image.jpg",
+//     isLoggedIn: true,
+//     posts: [post1, post3, post4]
+// }
+
+// for (var i = 0; i < facebookUser.posts.length; i++) {
+//     var post = facebookUser.posts[i];
+//     console.log('Post:', post.content);
+//     console.log('Likes:', post.likes);
+//     console.log('Shares:', post.shares);
+//     console.log('Comments:', post.comments);
+//     console.log('---');
+// }
+
+
+
+// var posts = [post1, post2];
+// for (var i = 0; i < posts.length; i++) {
+//     var post = posts[i];
+//     console.log('Post:', post.content);
+//     console.log('Likes:', post.likes);
+//     console.log('Shares:', post.shares);
+//     console.log('Comments:', post.comments);
+//     console.log('---');
+// }
+
+    var post1 =    {content: 'Had a great day!', likes: 10, shares: 5, comments: 3}
+    var post2 =    {content: 'Just finished a project.', likes: 20, shares: 10, comments: 8}
+    var post3 =    {content: 'Looking forward to the weekend!', likes: 15, shares: 7, comments: 4}
+    var post4 =    {content: 'Enjoying a nice meal.', likes: 8, shares: 3, comments: 2}
+
+ facebookUser = {
     userName: 'Faisal',
     password: '12345',
-    email: 'faisal@example.com',
-    profieImage: "reference-image.jpg",
+    email: 'faisal.dev08@gmail.com',
+    profileImage: "reference-image.jpg",
+    firendList: ['Ali', 'Ahmed', 'Hassan'],
     isLoggedIn: true,
-    posts: [post1, post3, post4]
+    posts: [post1, post2, post4]
+
 }
 
-for (var i = 0; i < facebookUser.posts.length; i++) {
-    var post = facebookUser.posts[i];
-    console.log('Post:', post.content);
-    console.log('Likes:', post.likes);
-    console.log('Shares:', post.shares);
-    console.log('Comments:', post.comments);
-    console.log('---');
-}
-
-
-
-var posts = [post1, post2];
-for (var i = 0; i < posts.length; i++) {
-    var post = posts[i];
-    console.log('Post:', post.content);
-    console.log('Likes:', post.likes);
-    console.log('Shares:', post.shares);
-    console.log('Comments:', post.comments);
-    console.log('---');
+var posts = [post1, post2, post4, {content: 'Had a great day!'}];
+for (index in posts) {
+    console.log(posts[index]);
 }
